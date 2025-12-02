@@ -21,7 +21,6 @@ MURK_DIR="/mnt/stateful_partition/murkmod"
 MUSHM_URL="https://raw.githubusercontent.com/NonagonWorkshop/Nonamod/main/utils/mushm.sh"
 
 log "Creating directories..."
-mkdir -p "$MURK_DIR/mush"
 mkdir -p "$MURK_DIR/plugins" "$MURK_DIR/pollen" || error "Failed to create MurkMod directories"
 sleep 1
 
