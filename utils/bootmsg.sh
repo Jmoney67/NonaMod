@@ -7,7 +7,7 @@ the murkmod GitHub Issues page.
 EOF
 cat <<EOF >/usr/share/chromeos-assets/text/boot_messages/en/self_repair.txt
 Oops, Your System is fucking itself.
-Hold tight while he tries to repair your system.
+Hold tight while your system tries to repair your system.
 EOF
 # auto repair message
 cat <<EOF >/usr/share/chromeos-assets/text/boot_messages/en/anti_block_devmode_virtual.txt
