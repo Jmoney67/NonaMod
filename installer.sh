@@ -26,14 +26,10 @@ BOOT_SK_DIR="/usr/local/bin/bootmsg.sh"
 log "Installing Needed Things And Shit"
 mkdir -p "$MURK_DIR/plugins" "$MURK_DIR/pollen" || error "Failed To Installing Needed Things And Shit"
 touch "$CONF_DIV"
-curl -fsSL "$CONF_DIR" "$NONA_MOD_CONF" || error "Failed to download Config"
+curl -fsSLo $CONF_DIR $NONA_MOD_CONF || error "Failed to download Config"
 
 log "Installing MushM"
 curl -fsSLo "$CROSH" "$MUSHM_URL" || error "Failed to download MushM"
-
-log "Fixing Shity Boot Msg"
-touch "$BOOT_SK_DIR"
-curl -fsSLo "$BOOT_SK_DIR" "$BOOT_SKRIPT" || error "Failed to fix boot msg"
 
 log "Installation complete!"
 echo -e "${YELLOW}Made by Star_destroyer11 and StarkMist111960${RESET}"
